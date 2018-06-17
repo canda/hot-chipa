@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "gcm_sender_id": "482941778795",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID",
+  "short_name": "Hot Chipa",
+  "name": "Hot Chipa",
   "icons": [
     {
       "src": "favicon.ico",
