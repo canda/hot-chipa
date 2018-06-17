@@ -1,7 +1,7 @@
 import React from 'react';
 
 const launchNotifications = () => {
-  console.log('send push notification')
+  console.log('send push notification');
 };
 
 const Notify = () => (
