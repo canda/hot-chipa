@@ -5,7 +5,7 @@ import Home from './Home';
 import Notify from './Notify';
 
 const App = () => (
-  <Router>
+  <Router basename="/hot-chipa">
     <div>
       <Route exact path="/" component={Home} />
       <Route path="/notify" component={Notify} />
