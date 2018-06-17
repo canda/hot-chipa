@@ -8,7 +8,6 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <link rel="manifest" href="/manifest.json" />
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
@@ -17,6 +16,10 @@
       OneSignal.push(function() {
         OneSignal.init({
           appId: "ea0cf40d-f4da-40ec-91be-e33469b3a7f4",
+          autoRegister: true,
+          notifyButton: {
+            enable: true,
+          },
         });
       });
     </script>
