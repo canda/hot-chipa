@@ -8,10 +8,6 @@ script:
   - npm test
   - npm run build
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: build
-  keep-history: true
-  on:
-    branch: master
+  provider: surge
+  project: ./build/
+  domain: example.surge.sh  

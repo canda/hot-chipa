@@ -5,11 +5,13 @@ const launchNotifications = () => {
     method: 'POST',
     headers: {
       Accept: 'application/json',
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      Authorization: 'Basic YjExZDVjNGMtM2E2OC00ZGUzLWI0MjUtZDc2MzU4ZjM1MzE3'
     },
     body: JSON.stringify({
       app_id: 'ea0cf40d-f4da-40ec-91be-e33469b3a7f4',
-      included_segments: ['Active Users', 'Inactive Users']
+      included_segments: ['Active Users', 'Inactive Users'],
+      contents: { en: 'Juancito English Message' }
     })
   });
   console.log('send push notification');
