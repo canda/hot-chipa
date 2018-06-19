@@ -7,7 +7,5 @@ cache:
 script:
   - npm test
   - npm run build
-deploy:
-  provider: surge
-  project: ./build/
-  domain: https://hotchipa.tk
+after_success:
+  - surge --project ./build/ --domain https://hotchipa.tk
