@@ -10,4 +10,4 @@ script:
 deploy:
   provider: surge
   project: ./build/
-  domain: example.surge.sh  
+  domain: https://hotchipa.tk
