@@ -1,4 +1,23 @@
 import React from 'react';
+import styled from 'styled-components';
+
+import Header from './common/Header';
+import Content from './common/Content';
+
+const Button = styled.button`
+  display: block;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 20px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 60px;
+  width: 50%;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+`;
 
 const launchNotifications = () => {
   fetch('https://onesignal.com/api/v1/notifications', {
@@ -19,12 +38,12 @@ const launchNotifications = () => {
 
 const Notify = () => (
   <div>
-    <h1>Chipadmin</h1>
-    <p>
+    <Header>Chipadmin</Header>
+    <Content>
       Listos los chipacitos? <br />
       Apretá el botón y lanzá las notificaciones. <br />
-      <button onClick={launchNotifications}>Launch</button>
-    </p>
+      <Button onClick={launchNotifications}>Launch</Button>
+    </Content>
   </div>);
 
 export default Notify;
