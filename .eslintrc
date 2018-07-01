@@ -9,5 +9,9 @@
   "globals": {
     "fetch": false,
     "document": false
+  },
+  "env": {
+    "browser": true,
+    "node": true
   }
 }
