@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   width: 70%;
   margin: auto;
   min-width: 400px;
-  max-width: 600px;
+  max-width: 550px;
 `;
 
 const Content = ({ children, className }) => (
