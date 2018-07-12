@@ -30,10 +30,9 @@ const launchNotifications = () => {
     body: JSON.stringify({
       app_id: 'ea0cf40d-f4da-40ec-91be-e33469b3a7f4',
       included_segments: ['Active Users', 'Inactive Users'],
-      contents: { en: 'Juancito English Message' }
+      contents: { en: 'Los chipas salieron del horno' }
     })
   });
-  console.log('send push notification');
 };
 
 const Notify = () => (
